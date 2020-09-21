@@ -1,21 +1,22 @@
 var headerIntro = document.getElementById('intro');
-var introContent = document.getElementById('intro-content');
+var contentIntro = document.getElementById('intro-content');
 var headerProjects = document.getElementById('projects-div');
-var introProjects = document.getElementById('projects-content');
+var contentProjects = document.getElementById('projects-content');
+var headerSkills = document.getElementById('header-tech-skills');
+var contentTechSkills = document.getElementById('tech-skills')
 
 function collapse(){
-    introContent.className = 'heading-content';
-    introProjects.className = 'heading-content';
+    contentIntro.className = 'heading-content';
+    contentProjects.className = 'heading-content';
+    contentTechSkills.className = 'heading-content';
+    
 }
 function expand(selected){
     collapse();
-    if(selected == 'header'){
-        introContent.className = 'show-header';
-    }
-    if(selected == 'projects'){
-        introProjects.className = 'show-header'; 
-    }
+    selected.className = 'show-content'
+    
 }
 
-headerIntro.addEventListener('click', function(){expand('header')});
-headerProjects.addEventListener('click', function(){expand('projects')});
+headerIntro.addEventListener('click', function(){expand(contentIntro)});
+headerProjects.addEventListener('click', function(){expand(contentProjects)});
+headerSkills.addEventListener('click',function(){expand(contentTechSkills)});

@@ -6,14 +6,13 @@
     background: linear-gradient(93deg, rgba(152,33,0,1) 0%, rgba(173,0,0,1) 64%, rgba(255,0,0,0.6923144257703081) 100%);
     background-repeat: no-repeat;
     border-radius: 8px;
-    left: 370px;
+    margin: auto;
     position: relative;
     text-align: center;
     top: 50px;
     vertical-align: middle;
-    width: 40%;
+    width: 50%;
 }
-
 .heading-content{
     background-color: rgb(202, 70, 47);
     display: none;
@@ -23,19 +22,27 @@
     font-family: 'Carter One';
     font-size: 18pt; 
 }
-.show-header{
+.show-content{
     background-color: rgb(202, 70, 47);
-    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    text-align: center;
     
 }
 
 
+
 #binary-img{
-    background-image: url(/images/binary.png);
+    
     background-repeat: repeat;
     background-size: contain;
     height: 800px;
+    
     position: relative;
+
     top: 0px;
     width: 400px;
 }
