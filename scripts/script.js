@@ -4,8 +4,8 @@ var headerProjects = document.getElementById('projects-div');
 var introProjects = document.getElementById('projects-content');
 
 function collapse(){
-    introContent.className = 'label-header';
-    introProjects.className = 'label-header';
+    introContent.className = 'heading-content';
+    introProjects.className = 'heading-content';
 }
 function expand(selected){
     collapse();
