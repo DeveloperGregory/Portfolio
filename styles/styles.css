@@ -1,5 +1,5 @@
 .heading:hover{
-    width:70%;
+    width:45%;
 }
 .heading{
     background: rgb(179, 39, 0);
@@ -23,16 +23,11 @@
     font-size: 18pt; 
 }
 .show-content{
-    background-color: rgb(202, 70, 47);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 5px;
+    background-color: rgb(240, 140, 122);
+    padding-bottom: 10px;
     text-align: center;
     
 }
-
 
 
 #binary-img{
@@ -47,11 +42,30 @@
     width: 400px;
 }
 
+#css-logo{
+    width: 90px;
+}
+
 #name{
+    background-color: orange;
+    border-radius: 10px;
+    border-style: solid;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18pt;
     position: relative;
     text-align: center;
     margin: 0px 50px 0px 50px;
+    padding: 0px 0px 0px 0px;
 }
+#intro{
+    margin-top: 0px;
+}
+
+#tech-skills{
+    list-style-type: none;
+    
+}
+
 
 body{
     background: rgb(101,81,223);
