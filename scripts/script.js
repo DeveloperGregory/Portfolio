@@ -11,10 +11,14 @@ function collapse(){
     contentOtherTech.className = 'heading-content';
     
 }
-function expand(selected){
-    collapse();
-    selected.className = 'show-content'
-    
+function expand(selected,target){
+    if(selected.className == 'show-content'){
+        collapse();
+    }
+    else{
+        collapse();
+        selected.className = 'show-content';
+    }
 }
 
 headerProjects.addEventListener('click', function(){expand(contentProjects)});

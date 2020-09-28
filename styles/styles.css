@@ -1,15 +1,35 @@
 :root{
     --logo-size: 3em;
-    --heading-top: 135px;
+    --heading-top: -5px;
+    --dark-blue: #002244;
+    --light-blue: #77AACB;
+    --med-blue: #43658b;
 }
 @media (max-width:600px){
-    body{
-        background-color: aqua;
-    }
+    
     .skill-list{
         font-family: 'Open Sans', sans-serif;
         margin-right: 10px;
-        background-color: blueviolet;
+    }
+    #code-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 10pt;
+    }
+    #secondary-code-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 10pt;
+            
+    }
+    #name-area{
+        background-color: var(--med-blue);
+        margin: 0px;
+        width: 100%;
     }
     
 }
@@ -20,9 +40,12 @@
 .heading{
     background-color: #43658b;
     background-repeat: no-repeat;
+    border-color: var(--dark-blue);
     border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
     color:  #002244;
-    height: 10%;
+    top: 0px;
     margin: 3px;
     position: relative;
     text-align: center;
@@ -41,6 +64,13 @@
     width: var(--logo-size);
        
 }
+.name-class{
+    color:  #002244;
+    margin-left: 5px;
+    margin-top: -40px;
+    
+}
+
 .show-content{
     background-color: #77AACB;
     box-shadow: 5px 5px rgba(41,41,41,0.4);
@@ -50,19 +80,32 @@
     animation-name: content-show;
     animation-duration: 1s;
     animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 @keyframes content-show{
     0%{
         transform: scaleY(0);
+        width: 140%;
+        
+    }
+    50%{
+        transform: scaleY(1);  
+        width: 200%;
     }
     100%{
-        transform: scaleY(1)
+        transform: translateX(49.75%);
+        width: 200%;
     }
 }
 
 .skill-list{
     font-family: 'Open Sans', sans-serif;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    
 }
 
 #bio-area{
@@ -81,26 +124,32 @@
 #choose{
     color:  #002244;
     position: relative;
-    margin: 0px;
+    margin: 20px;
     padding: 0px;
-    text-align: center;
-    top: var(--heading-top);
     width: 100%;
 }
 
 #code-skills{
-    list-style-type: none;
     display: flex;
-    padding: 0px;
-    margin-top: 0px;
-    vertical-align:top;
+    justify-content: space-around;
+   
         
+}
+#developer{
+    margin-top: -20px;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    font-size: 20pt;
+    position: relative;
+    left: 150px;
 }
 #flex-container{
     display: flex;
-    margin-left: 5px;
+    flex-direction: column;
+    margin-left: 20px;
     margin-right:5px;
     top: 10%;
+    
 }
 
 #footer{
@@ -111,54 +160,42 @@
     width: 100%;
 }
 
+
 #secondary-code-skills{
     list-style-type: none;
     display: flex;
-    padding: 0px 70px 10px 70px;
-    margin: auto;
-    margin-top: 0px;
-    vertical-align:top;
+    justify-content: space-around;
+   
         
 }
 
-#header-tech-skills{
-    top: var(--heading-top);
-}
 
 #list-tech-skills{
     list-style-type: none;
 }
-#name{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30pt;
-    font-weight: 800;
-    position: relative;
-    text-align: center;
-    top: 30px;
-    margin: 0px 50px 0px 50px;
-    padding: 0px 0px 0px 0px;
+#main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    
 }
-#name-area{
-    color:  #002244;
-    font-size: 12pt;
-    font-family: 'Times New Roman', Times, serif;
-    height: 150px;
-    position: fixed;
-    text-align: center;
-    top: 0px;
-    width: 100%;
-    z-index:2;
+#main-nav a{
+    color: var(--dark-blue);
+    text-decoration: none;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-right: 5px;
+    border-bottom: solid;
+    border-color: var(--med-blue);
 }
-#other-tech-skills{
-    top: var(--heading-top);
+#main-nav a:hover{
+    background-color: var(--med-blue);
+
 }
-#portfolio-name{
-    font-family: 'Dancing Script', cursive;
-    font-size: 24pt;
-    margin: 0px;
-    position: relative;
-    top: 30px;
-}
+
+
 #projects-div{
     top: var(--heading-top);
 }
@@ -167,6 +204,8 @@
 
 
 body{
+    background-image: url('/images/blueballsbackground.png');
+    background-size: 100%;
     
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
