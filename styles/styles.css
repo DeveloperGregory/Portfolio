@@ -85,6 +85,24 @@
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
+<<<<<<< HEAD
+=======
+}
+@keyframes content-show{
+    0%{
+        transform: scaleY(0);
+        width: 140%;
+        
+    }
+    50%{
+        transform: scaleY(1);  
+        width: 200%;
+    }
+    100%{
+        transform: translateX(49.75%);
+        width: 200%;
+    }
+>>>>>>> 154b5ef5a26f87ce15f4bb713b61ee43e256f03c
 }
 
 
